@@ -7,7 +7,7 @@ export const Container = styled.div`
   width: 500px;
   text-align: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 3px solid #333340;
     background: linear-gradient(62.93deg, #97ccf0 19.68%, #5218fa 89.55%);
 `;
