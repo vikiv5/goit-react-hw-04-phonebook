@@ -76,7 +76,7 @@ const contactsList = [
             contacts={getVisibleContacts()} onDelete={deleteContacts}
           />
         ) : (
-          <p>No any contacts</p>
+          <p>No contacts</p>
         )}
       </Container>
     );

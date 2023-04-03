@@ -9,16 +9,15 @@ import { Button, Input, Label } from './ContactForm.styled';
 const ContactForm=({onSubmit})=>{
 
   const [name, setName] = useState("")
-  const [number, setNumber] = useState ("")
+  const [number, setNumber] =useState ("")
 
-const handleSubmit = e => {
-  e.preventDefault()
-
+const handleSubmit=e=> {
+  e.preventDefault();
   onSubmit(name, number);
   reset();
-};
+}
 
-const reset = () =>{
+const reset =()=>{
   setName("")
   setNumber("")
 }
@@ -53,6 +52,12 @@ const reset = () =>{
     );
 
     }
+
+    export default ContactForm;
+
+ContactForm.propTypes = {
+  handleSubmit: PropTypes.func,
+};
 /*class ContactForm extends Component {
   state = {
     name: '',
@@ -99,8 +104,3 @@ const reset = () =>{
   }
 }
 */
-export default ContactForm;
-
-ContactForm.propTypes = {
-  handleSubmit: PropTypes.func,
-};
